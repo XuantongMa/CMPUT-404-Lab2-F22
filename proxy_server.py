@@ -44,6 +44,7 @@ def send_data(serversocket, payload):
 def main():
     proxy_host = '127.0.0.1'
     proxy_port = 8001
+    buffer_size = 4096
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     
         #QUESTION 3
